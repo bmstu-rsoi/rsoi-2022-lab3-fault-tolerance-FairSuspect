@@ -13,8 +13,9 @@ import (
 func initControllers(r *mux.Router, models *models.Models) {
 	r.Use(utils.LogHandler)
 
-	r.HandleFunc("/manage/health", healthResponse).Methods(http.MethodGet)
-
+	r.HandleFunc("/manage/health", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+	}).Methods(http.MethodGet)
 	api1_r := r.PathPrefix("/api/v1/").Subrouter()
 
 	InitFlights(api1_r, models.Flights)
