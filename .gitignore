@@ -195,7 +195,7 @@ build-iPhoneSimulator/
 *.dll
 
 # Fortran module files
-*.mod
+
 *.smod
 
 # Compiled Static libraries
@@ -356,7 +356,7 @@ local.properties
 *.pdb
 
 # Kernel Module Compile Results
-*.mod*
+
 *.cmd
 .tmp_versions/
 modules.order
@@ -587,10 +587,9 @@ xcuserdata/
 DerivedData/
 *.moved-aside
 *.pbxuser
-!default.pbxuser
-*.mode1v3
+!default.pbxuse
 !default.mode1v3
-*.mode2v3
+
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
